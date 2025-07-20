@@ -1,4 +1,4 @@
-FROM golang:1.21-alpine3.18 as builder
+FROM ubuntu:22.04 
 RUN apk update && apk upgrade --available && sync
 WORKDIR /app
 COPY . .
